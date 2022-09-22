@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9D8FF"
+    tools:context=".Sign_Up">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="105dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/richwell_logo" />
+
+    <TextView
+        android:id="@+id/CreateAccountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:text="Create Account"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/Logo"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/Logo"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <Spinner
+        android:id="@+id/Usertype"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/CreateAccountLabel"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/CreateAccountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccountLabel" />
+
+    <EditText
+        android:id="@+id/FNamefield"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/Usertype"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Usertype"
+        app:layout_constraintTop_toBottomOf="@+id/Usertype" />
+
+    <EditText
+        android:id="@+id/LNamedfield"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/FNamefield"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/FNamefield"
+        app:layout_constraintTop_toBottomOf="@+id/FNamefield" />
+
+    <EditText
+        android:id="@+id/MailField"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/LNamedfield"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LNamedfield"
+        app:layout_constraintTop_toBottomOf="@+id/LNamedfield" />
+
+    <EditText
+        android:id="@+id/UsernameField"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/MailField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/MailField"
+        app:layout_constraintTop_toBottomOf="@+id/MailField" />
+
+    <EditText
+        android:id="@+id/PasswordField"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/UsernameField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/UsernameField"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameField" />
+
+    <EditText
+        android:id="@+id/ConfirmPassField"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PasswordField"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordField" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="I agree in"
+        app:layout_constraintEnd_toEndOf="@+id/ConfirmPassField"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/ConfirmPassField"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPassField" />
+
+    <TextView
+        android:id="@+id/TermsandCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textColor="#203d96"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner_view_button"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/TermsandCondition"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/TermsandCondition"
+        app:layout_constraintTop_toBottomOf="@+id/TermsandCondition" />
+
+    <TextView
+        android:id="@+id/HaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Already have an account?"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#203d96"
+        app:layout_constraintEnd_toEndOf="@+id/HaveAccount"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/HaveAccount"
+        app:layout_constraintTop_toBottomOf="@+id/HaveAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

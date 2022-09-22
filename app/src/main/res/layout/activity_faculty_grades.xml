@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9D8FF"
+    tools:context=".FacultyGrades">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/faculty_bottom_nav_menu"/>
+
+    <TextView
+        android:id="@+id/facgrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Grades"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/facultyPortal4"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/facultyPortal4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyPortal4" />
+
+    <TextView
+        android:id="@+id/facultyPortal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Faculty Portal"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notifbell8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyPortal4"
+        app:layout_constraintStart_toEndOf="@+id/facultyPortal4"
+        app:layout_constraintTop_toTopOf="@+id/facultyPortal4"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/notifbell" />
+
+    <ImageView
+        android:id="@+id/userpic8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyPortal4"
+        app:layout_constraintEnd_toStartOf="@+id/facultyPortal4"
+        app:layout_constraintTop_toTopOf="@+id/facultyPortal4"
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/user" />
+
+    <Spinner
+        android:id="@+id/SubjectCode"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/userpic8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userpic8"
+        app:layout_constraintTop_toBottomOf="@+id/userpic8" />
+
+    <Spinner
+        android:id="@+id/GradeSection"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SubjectCode"
+        app:layout_constraintStart_toEndOf="@+id/SubjectCode"
+        app:layout_constraintTop_toTopOf="@+id/SubjectCode"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5sp"
+        app:layout_constraintEnd_toEndOf="@+id/SubjectCode"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/SubjectCode"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectCode">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="4sp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gradefirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="4sp"
+                android:text="1st"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gradesecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="4sp"
+                android:text="2nd"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gradethird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="4sp"
+                android:text="3rd"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gradefourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="4sp"
+                android:text="4th"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/graderemarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="4sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Romero, Julie"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="95"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="96"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="84"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="95"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Dela Cruz, Rebecca"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="80"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="80"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="80"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Cruz, Joseph"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="81"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="81"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="81"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Tapang, Lilibeth"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="82"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="89"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="82"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="82"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Santiago, Mary Anne"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="83"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="93"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="83"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="83"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Marcos, Ferdinand"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="84"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="90"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="84"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="84"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Santos, Joan"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="85"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Santiago, Verde"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="86"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="81"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="86"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="86"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Lupin, Chris"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="87"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="86"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="87"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="87"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/gradestudname10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="125dp"
+                android:padding="5sp"
+                android:text="Uy, Henry"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gradefirst10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="88"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradesecond10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="96"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradethird10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="88"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gradefourth10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="40dp"
+                android:padding="5sp"
+                android:text="88"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/graderemarks10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:padding="3sp"
+                android:text="Remarks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btngradeclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/btngradeclear"
+        app:layout_constraintStart_toEndOf="@+id/btngradeclear"
+        app:layout_constraintTop_toTopOf="@+id/btngradeclear"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

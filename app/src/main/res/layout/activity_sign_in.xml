@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9D8FF"
+    tools:context=".Sign_In">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="148dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/richwell_logo" />
+
+    <Spinner
+        android:id="@+id/Usertype"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/Logo"
+        app:layout_constraintStart_toStartOf="@+id/Logo"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <TextView
+        android:id="@+id/Usernamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Username"
+        android:textColor="#979596"
+        app:layout_constraintEnd_toEndOf="@+id/Usertype"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Usertype"
+        app:layout_constraintTop_toBottomOf="@+id/Usertype" />
+
+    <EditText
+        android:id="@+id/Usernamefield"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner_view"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Usertype"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Usertype"
+        app:layout_constraintTop_toBottomOf="@+id/Usertype" />
+
+    <TextView
+        android:id="@+id/Passwordlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#979596"
+        app:layout_constraintBottom_toTopOf="@+id/Passwordfield"
+        app:layout_constraintEnd_toEndOf="@+id/Usernamefield"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Usernamefield"
+        app:layout_constraintTop_toBottomOf="@+id/Usernamefield"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Passwordfield"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:background="@drawable/rounded_corner_view"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Usernamefield"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Usernamefield"
+        app:layout_constraintTop_toBottomOf="@+id/Usernamefield" />
+
+    <Button
+        android:id="@+id/Signbtn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_corner_view_button"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="@+id/Passwordfield"
+        app:layout_constraintStart_toStartOf="@+id/Passwordfield"
+        app:layout_constraintTop_toBottomOf="@+id/Passwordfield"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/Noaccountlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Don't have an account yet?"
+        app:layout_constraintEnd_toEndOf="@+id/Signbtn"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/Signbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Signbtn" />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sign Up"
+        android:textColor="#203d96"
+        app:layout_constraintEnd_toEndOf="@+id/Noaccountlabel"
+        app:layout_constraintStart_toStartOf="@+id/Noaccountlabel"
+        app:layout_constraintTop_toBottomOf="@+id/Noaccountlabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

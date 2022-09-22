@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Dashboard"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:id="@+id/FDashboard"/>
+
+    <item
+        android:title="Events"
+        android:icon="@drawable/ic_baseline_event_24"
+        android:id="@+id/FEvents"/>
+
+    <item
+        android:title="Master List"
+        android:icon="@drawable/ic_baseline_folder_copy_24"
+        android:id="@+id/MasterList"/>
+
+    <item
+        android:title="Grades"
+        android:icon="@drawable/ic_baseline_grade_24"
+        android:id="@+id/FGrades"/>
+
+    <item
+        android:title="Schedule"
+        android:icon="@drawable/ic_baseline_schedule_24"
+        android:id="@+id/Schedule"/>
+</menu>
