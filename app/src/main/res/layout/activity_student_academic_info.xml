@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Academic Information"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/studentPortal2"
         app:layout_constraintHorizontal_bias="0.571"
@@ -24,10 +25,10 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toTopOf="@+id/guideline33"
         app:srcCompat="@drawable/user" />
 
     <TextView
@@ -52,25 +53,15 @@
         app:layout_constraintTop_toTopOf="@+id/studentPortal2"
         app:srcCompat="@drawable/notifbell" />
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:menu="@menu/bottom_nav_menu" />
 
     <TextView
         android:id="@+id/textView12"
@@ -78,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="Doe,"
+        android:textColor="#000000"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/userpic2"
@@ -90,6 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="John E."
+        android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintStart_toEndOf="@+id/textView12"
@@ -102,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="21232029"
+        android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintHorizontal_bias="0.0"
@@ -114,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Richwell Colleges Incorporated"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.0"
@@ -137,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="San Jose, Plaridel, Bulacan"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -149,6 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Year level:"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"
@@ -161,6 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Status:"
+        android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintHorizontal_bias="0.0"
@@ -173,6 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Program Curriculum:"
+        android:textColor="#000000"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="@+id/textView19"
         app:layout_constraintHorizontal_bias="0.0"
@@ -183,8 +182,9 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="144dp"
         android:text="Third Year"
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView17"
@@ -196,13 +196,15 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="116dp"
         android:text="Regular Student"
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView19"
         app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/textView19" />
+        app:layout_constraintTop_toTopOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView25"
@@ -210,6 +212,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="College:"
+        android:textColor="#000000"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="@+id/textView21"
         app:layout_constraintHorizontal_bias="0.0"
@@ -222,6 +225,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="36dp"
         android:text="Academic Program:"
+        android:textColor="#000000"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="@+id/textView25"
         app:layout_constraintHorizontal_bias="0.0"
@@ -232,20 +236,23 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="12dp"
         android:text="BSIT (2018-2019)"
+        android:textColor="#000000"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintStart_toEndOf="@+id/textView21"
-        app:layout_constraintTop_toTopOf="@+id/textView21" />
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="246dp"
         android:layout_height="54dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="28dp"
         android:text="College of Information and Communication Technology"
+        android:textColor="#000000"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView25"
@@ -259,11 +266,40 @@
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:text="Bachelor of Science in Information Technology"
+        android:textColor="#000000"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView27"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toTopOf="@+id/textView27"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

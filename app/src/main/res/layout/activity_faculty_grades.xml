@@ -7,25 +7,15 @@
     android:background="#F9D8FF"
     tools:context=".FacultyGrades">
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/faculty_bottom_nav_menu"/>
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:menu="@menu/faculty_bottom_nav_menu" />
 
     <TextView
         android:id="@+id/facgrades"
@@ -47,9 +37,9 @@
         android:text="Faculty Portal"
         android:textSize="25sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
     <ImageView
         android:id="@+id/notifbell8"
@@ -75,9 +65,11 @@
 
     <Spinner
         android:id="@+id/SubjectCode"
-        android:layout_width="159dp"
-        android:layout_height="49dp"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
         android:layout_marginTop="64dp"
+        android:entries="@array/subjectcode"
+        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="@+id/userpic8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/userpic8"
@@ -85,9 +77,10 @@
 
     <Spinner
         android:id="@+id/GradeSection"
-        android:layout_width="159dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="56dp"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:entries="@array/gradesection"
         app:layout_constraintBottom_toBottomOf="@+id/SubjectCode"
         app:layout_constraintStart_toEndOf="@+id/SubjectCode"
         app:layout_constraintTop_toTopOf="@+id/SubjectCode"
@@ -858,4 +851,32 @@
         app:layout_constraintStart_toEndOf="@+id/btngradeclear"
         app:layout_constraintTop_toTopOf="@+id/btngradeclear"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

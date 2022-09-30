@@ -8,18 +8,6 @@
     tools:context=".FacultyEvent">
 
     <TextView
-        android:id="@+id/textView133"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Event"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
-        app:layout_constraintHorizontal_bias="0.707"
-        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
-
-    <TextView
         android:id="@+id/calendar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,29 +49,18 @@
         android:text="Faculty Portal"
         android:textSize="25sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/faculty_bottom_nav_menu"/>
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:menu="@menu/faculty_bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -100,7 +77,7 @@
         android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:padding="10sp"
         app:layout_constraintEnd_toEndOf="@+id/calendar2"
         app:layout_constraintHorizontal_bias="0.496"
@@ -402,7 +379,7 @@
         android:layout_marginTop="12dp"
         android:text="EDIT"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/tableLayout2"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
@@ -422,69 +399,46 @@
     <EditText
         android:id="@+id/txtstartdate"
         android:layout_width="120dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Start"
         android:inputType="date"
-        app:layout_constraintEnd_toEndOf="@+id/textView131"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="@+id/textView131"
-        app:layout_constraintTop_toBottomOf="@+id/textView131" />
-
-    <TextView
-        android:id="@+id/textView131"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Start"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/newbtn"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/newbtn"
         app:layout_constraintTop_toBottomOf="@+id/newbtn" />
 
     <EditText
         android:id="@+id/txtenddate"
-        android:layout_width="120dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="End"
         android:inputType="date"
-        app:layout_constraintEnd_toEndOf="@+id/textView132"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/textView132"
-        app:layout_constraintTop_toBottomOf="@+id/textView132" />
-
-    <TextView
-        android:id="@+id/textView132"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="End"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/txtstartdate"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/txtstartdate"
         app:layout_constraintTop_toBottomOf="@+id/txtstartdate" />
 
     <EditText
         android:id="@+id/txtevent"
         android:layout_width="213dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="Event"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView133"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="@+id/textView133"
-        app:layout_constraintTop_toBottomOf="@+id/textView133" />
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
     <Button
         android:id="@+id/btnsave"
         android:layout_width="74dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="SAVE"
         android:textColor="#000000"
@@ -497,7 +451,7 @@
     <Button
         android:id="@+id/btnclear"
         android:layout_width="74dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:text="CLEAR"
         android:textColor="#000000"
@@ -506,5 +460,33 @@
         app:layout_constraintStart_toEndOf="@+id/btnsave"
         app:layout_constraintTop_toTopOf="@+id/btnsave"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/rounded_null_bg"
         android:ems="10"
+        android:hint="a"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName10"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,6 +28,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_null_bg"
         android:ems="10"
+        android:hint="a"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName11"
         app:layout_constraintHorizontal_bias="1.0"
@@ -40,6 +42,7 @@
         android:layout_marginTop="9dp"
         android:background="@drawable/rounded_null_bg"
         android:ems="10"
+        android:hint="a"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/calendarView"
         app:layout_constraintStart_toStartOf="@+id/calendarView"
@@ -164,9 +167,10 @@
         android:text="Faculty Portal"
         android:textSize="25sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <ImageView
         android:id="@+id/notifbell6"
@@ -178,24 +182,50 @@
         app:layout_constraintTop_toTopOf="@+id/facultyPortal"
         app:srcCompat="@drawable/notifbell" />
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/faculty_bottom_nav_menu"/>
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:menu="@menu/faculty_bottom_nav_menu">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-8dp" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Capstone</string>
+    <string-array name="usertype">
+        <item> </item>
+        <item>Student</item>
+        <item>Faculty</item>
+    </string-array>
+    <string-array name="subjectcode">
+        <item>subjectcode1</item>
+        <item>subjectcode2</item>
+        <item>subjectcode3</item>
+        <item>subjectcode4</item>
+        <item>subjectcode5</item>
+    </string-array>
+    <string-array name="gradesection">
+        <item>gradesection1</item>
+        <item>gradesection2</item>
+        <item>gradesection3</item>
+        <item>gradesection4</item>
+        <item>gradesection5</item>
+    </string-array>
+    <string-array name="semester">
+        <item>semester1</item>
+        <item>semester2</item>
+        <item>semester3</item>
+    </string-array>
+    <string-array name="strand">
+        <item>Science Technology Engineering Mathematics</item>
+        <item>Accountancy Business Management</item>
+        <item>General Academics System</item>
+    </string-array>
 </resources>

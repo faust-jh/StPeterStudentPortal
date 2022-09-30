@@ -4,22 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.238" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/drawable/rounded_background_white.xml" value="0.226" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/drawable/rounded_corner_view.xml" value="0.238" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/drawable/rounded_corner_view_button.xml" value="0.238" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/drawable/rounded_null_bg.xml" value="0.238" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_dashboard.xml" value="0.25" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_event.xml" value="0.25" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_grades.xml" value="0.33" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_master_list.xml" value="0.3031815346225827" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_schedule.xml" value="0.25" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_event.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_grades.xml" value="0.5" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_master_list.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_faculty_schedule.xml" value="0.33" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_academic_info.xml" value="0.25" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_academic_info.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_dashboard.xml" value="0.33" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_grade.xml" value="0.25" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_information.xml" value="0.25" />
-        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_request.xml" value="0.22" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_information.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/activity_student_request.xml" value="0.4365808823529412" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/rounded_null_bg.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/spinner_dropdown_layout.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/studidpopup.xml" value="0.33" />
+        <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/layout/termsandconditionpopup.xml" value="0.25" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.26875" />
         <entry key="..\:/Users/PCB/AndroidStudioProjects/Capstone/app/src/main/res/menu/faculty_bottom_nav_menu.xml" value="0.26875" />
       </map>

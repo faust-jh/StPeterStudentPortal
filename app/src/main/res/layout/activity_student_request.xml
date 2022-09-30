@@ -11,14 +11,14 @@
         android:id="@+id/studentPortal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:text="Student Portal"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline48"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline47"
+        app:layout_constraintTop_toTopOf="@+id/guideline49" />
 
     <ImageView
         android:id="@+id/userpic4"
@@ -41,25 +41,15 @@
         app:layout_constraintTop_toTopOf="@+id/studentPortal4"
         app:srcCompat="@drawable/notifbell" />
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline50"
+        app:layout_constraintEnd_toStartOf="@+id/guideline48"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:layout_constraintStart_toStartOf="@+id/guideline47"
+        app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -114,8 +104,9 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="342dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:entries="@array/semester"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
@@ -124,8 +115,9 @@
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="342dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:entries="@array/strand"
         app:layout_constraintEnd_toEndOf="@+id/spinner"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spinner"
@@ -134,7 +126,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="342dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Name"
@@ -148,7 +140,7 @@
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="69dp"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="COE"
         android:textSize="18sp"
@@ -160,7 +152,7 @@
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginStart="104dp"
         android:text="Form 137"
         android:textSize="18sp"
@@ -172,7 +164,7 @@
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginStart="46dp"
         android:text="Good Moral"
         android:textSize="18sp"
@@ -184,7 +176,7 @@
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="Report Card"
         android:textSize="18sp"
@@ -196,7 +188,7 @@
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="Certificate of Graduation"
         android:textSize="18sp"
@@ -204,6 +196,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/checkBox5"
         app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:hint="a"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView30"
@@ -218,21 +223,9 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="124dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="2dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView30"
-        app:layout_constraintStart_toEndOf="@+id/textView30"
-        app:layout_constraintTop_toTopOf="@+id/textView30" />
-
-    <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="341dp"
-        android:layout_height="56dp"
+        android:layout_height="48dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Purpose of Request"
@@ -246,12 +239,40 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="103dp"
-        android:layout_height="36dp"
+        android:layout_height="48dp"
         android:text="Submit"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
