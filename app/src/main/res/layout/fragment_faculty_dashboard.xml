@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9D8FF"
-    tools:context=".FacultyDashboard">
+    tools:context=".FacultyDashboardFragment">
 
     <EditText
         android:id="@+id/editTextTextPersonName11"
@@ -30,10 +30,12 @@
         android:ems="10"
         android:hint="a"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName11"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName11"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
+        app:layout_constraintVertical_bias=".10" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -181,24 +183,6 @@
         app:layout_constraintStart_toEndOf="@+id/facultyPortal"
         app:layout_constraintTop_toTopOf="@+id/facultyPortal"
         app:srcCompat="@drawable/notifbell" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:menu="@menu/faculty_bottom_nav_menu">
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="-8dp" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"

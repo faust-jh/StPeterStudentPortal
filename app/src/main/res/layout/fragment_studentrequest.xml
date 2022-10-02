@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9D8FF"
-    tools:context=".StudentRequest">
+    tools:context=".StudentRequestFragment">
 
     <TextView
         android:id="@+id/studentPortal4"
@@ -40,16 +40,6 @@
         app:layout_constraintStart_toEndOf="@+id/studentPortal4"
         app:layout_constraintTop_toTopOf="@+id/studentPortal4"
         app:srcCompat="@drawable/notifbell" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guideline50"
-        app:layout_constraintEnd_toStartOf="@+id/guideline48"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline47"
-        app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -140,7 +130,7 @@
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="69dp"
-        android:layout_height="48dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="COE"
         android:textSize="18sp"
@@ -152,7 +142,7 @@
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="30dp"
         android:layout_marginStart="104dp"
         android:text="Form 137"
         android:textSize="18sp"
@@ -164,7 +154,7 @@
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="30dp"
         android:layout_marginStart="46dp"
         android:text="Good Moral"
         android:textSize="18sp"
@@ -176,7 +166,7 @@
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="Report Card"
         android:textSize="18sp"
@@ -188,7 +178,7 @@
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:text="Certificate of Graduation"
         android:textSize="18sp"
@@ -203,7 +193,6 @@
         android:layout_height="48dp"
         android:layout_marginStart="2dp"
         android:ems="10"
-        android:hint="a"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView30"
@@ -242,10 +231,11 @@
         android:layout_height="48dp"
         android:text="Submit"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline50"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
-        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline47"

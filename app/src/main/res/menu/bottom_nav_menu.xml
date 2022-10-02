@@ -12,17 +12,17 @@
         android:id="@+id/Grades"/>
 
     <item
-        android:title="Academic Information"
+        android:title="Academic"
         android:icon="@drawable/ic_baseline_list_alt_24"
         android:id="@+id/AcadInfo"/>
 
     <item
-        android:title="Student Information"
+        android:title="StudentInformation"
         android:icon="@drawable/ic_baseline_person_24"
         android:id="@+id/StudInfo"/>
 
     <item
-        android:title="Request Document"
+        android:title="RequestDocument"
         android:icon="@drawable/ic_baseline_front_hand_24"
         android:id="@+id/Request"/>
 </menu>

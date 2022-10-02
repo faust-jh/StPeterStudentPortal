@@ -15,6 +15,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class Sign_In extends AppCompatActivity {
 
     //DECLARATION
@@ -32,9 +37,13 @@ public class Sign_In extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        Spinner spinner = findViewById(R.id.Usertype);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.usertype, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //How to organize spinner
+        final List<String> states = Arrays.asList("Student", "Faculty");
+
+        final Spinner spinner = findViewById(R.id.Usertype);
+
+        ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(), R.layout.spinner_selected_item, states);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
 
@@ -91,8 +100,8 @@ public class Sign_In extends AppCompatActivity {
             }
             else if (usertype.equals("Student")) {
                 if (user.equals(studUser) && pass.equals(studPass)) {
-                    Intent signIn = new Intent(this, StudentDashboard.class);
-                    startActivity(signIn);
+                    Intent studNav = new Intent(this, StudentNavigation.class);
+                    startActivity(studNav);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Invalid Account!", LENGTH_LONG).show();
@@ -102,19 +111,15 @@ public class Sign_In extends AppCompatActivity {
             }
             else if (usertype.equals("Faculty")) {
                 if (user.equals(facUser) && pass.equals(facPass)) {
-                    Intent signIn = new Intent(this, FacultyDashboard.class);
-                    startActivity(signIn);
+                    Intent facNav = new Intent(this, FacultyNavigation.class);
+                    startActivity(facNav);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Invalid Account!", LENGTH_LONG).show();
                     txtUsername.setText("");
                     txtPassword.setText("");
                 }
-
             }
         }
    }
-
-
-
 }

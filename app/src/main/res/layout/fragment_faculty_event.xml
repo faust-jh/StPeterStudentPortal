@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F9D8FF"
-    tools:context=".FacultyEvent">
+    tools:context=".FacultyEventFragment">
 
     <TextView
         android:id="@+id/calendar2"
@@ -52,15 +52,6 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
         app:layout_constraintTop_toTopOf="@+id/guideline13" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guideline14"
-        app:layout_constraintEnd_toStartOf="@+id/guideline12"
-        app:layout_constraintStart_toStartOf="@+id/guideline11"
-        app:menu="@menu/faculty_bottom_nav_menu" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -416,10 +407,12 @@
         android:ems="10"
         android:hint="End"
         android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toEndOf="@+id/txtstartdate"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/txtstartdate"
-        app:layout_constraintTop_toBottomOf="@+id/txtstartdate" />
+        app:layout_constraintTop_toBottomOf="@+id/txtstartdate"
+        app:layout_constraintVertical_bias=".20" />
 
     <EditText
         android:id="@+id/txtevent"
@@ -443,10 +436,12 @@
         android:text="SAVE"
         android:textColor="#000000"
         android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toEndOf="@+id/txtevent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="@+id/txtevent"
-        app:layout_constraintTop_toBottomOf="@+id/txtevent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtevent"
+        app:layout_constraintVertical_bias=".20" />
 
     <Button
         android:id="@+id/btnclear"

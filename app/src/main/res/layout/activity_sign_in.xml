@@ -24,10 +24,10 @@
         android:layout_width="294dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
-        android:dropDownSelector="@color/black"
+        android:background="#612F2F"
         android:entries="@array/usertype"
+        android:popupBackground="@color/teal_200"
         android:spinnerMode="dropdown"
-        android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="@+id/Logo"
         app:layout_constraintStart_toStartOf="@+id/Logo"
         app:layout_constraintTop_toBottomOf="@+id/Logo" />
